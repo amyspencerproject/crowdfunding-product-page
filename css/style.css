@@ -28,12 +28,13 @@
    */
   
   ::-moz-selection {
-    background: #b3d4fc;
+    background: #eaeaf1;
+    /* background: #b3d4fc; */
     text-shadow: none;
   }
   
   ::selection {
-    background: #b3d4fc;
+    background: #eaeaf1;
     text-shadow: none;
   }
   
@@ -86,7 +87,44 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  
+     body {
+        /* background: #eaeaf1; */
+        font-family: 'Source Sans Pro', sans-serif;
+     }
+
+     header {
+        background: url(../images/image-hero-mobile.jpg) no-repeat center #cecece;
+        min-height: 30em;
+        /* background: #eaeaf1; */
+     }
+
+     p {
+        color: #7f7f7f;
+     }
+
+     p span {
+        color: #000000;
+        font-size: 1.5em;
+        font-weight: 700;
+     }
+
+     h4 {
+        color: #3cb4ab;
+     }
+
+     button {
+        color: #ffffff;
+        font-weight: 700;
+        background-color: #3cb4ab;
+        border: none;
+        border-radius: 1em;
+        padding: 1em;
+        text-align: center;
+
+     }
+   .content-wrapper {
+        background: #ffffff;
+     }
   /* ==========================================================================
      Helper classes
      ========================================================================== */
