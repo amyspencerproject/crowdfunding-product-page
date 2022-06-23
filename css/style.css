@@ -95,6 +95,7 @@
      header {
         background: url(../images/image-hero-mobile.jpg) no-repeat center #cecece;
         min-height: 30em;
+        /* width: 100%; */
         /* background: #eaeaf1; */
      }
 
@@ -106,6 +107,10 @@
         color: #000000;
         font-size: 1.5em;
         font-weight: 700;
+     }
+
+     h1 {
+        text-align: center;
      }
 
      h4 {
@@ -120,12 +125,60 @@
         border-radius: 1em;
         padding: 1em;
         text-align: center;
-
      }
+
    .content-wrapper {
         background: #ffffff;
      }
-  /* ==========================================================================
+
+     .header-wrapper {
+        /* width: 80%; */
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+     }
+
+     .header-nav-list {
+
+     }
+
+     .header-nav-stack {
+
+     }
+
+     .project-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+     }
+
+     .project-details p {
+        text-align: center;
+     }
+
+     .project-fund {
+        color: #ffffff;
+        font-weight: 700;
+        background-color: #3cb4ab;
+        border: none;
+        border-radius: 5em;
+        padding: 1em 3em;
+        text-align: center;
+     }
+
+     .bookmark {
+        color: #7f7f7f;
+        font-weight: 700;
+        background-color: #2f2f2f 
+        border: none;
+        border-radius: 5em;
+        padding: 1em;
+        margin: 2em;
+     }
+
+
+  /* ========================================================================== */
      Helper classes
      ========================================================================== */
   
