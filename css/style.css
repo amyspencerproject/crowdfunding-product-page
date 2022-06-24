@@ -87,8 +87,10 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
+
+     /***** General Styles *****/
      body {
-        /* background: #eaeaf1; */
+        background: #eaeaf1;
         font-family: 'Source Sans Pro', sans-serif;
      }
 
@@ -98,7 +100,12 @@
         /* width: 100%; */
         /* background: #eaeaf1; */
      }
-
+     
+     main {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+     }
      p {
         color: #7f7f7f;
      }
@@ -129,8 +136,10 @@
 
    .content-wrapper {
         background: #ffffff;
+        width: 90%;
      }
 
+    /***** Header *****/
      .header-wrapper {
         /* width: 80%; */
         display: flex;
@@ -146,15 +155,29 @@
 
      }
 
+     /***** Project Details *****/
      .project-details {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: row wrap;
+        background: #ffffff;
+        width: 90%;
+        padding: 1em 0;
+        margin-bottom: 1.5em;
      }
 
      .project-details p {
         text-align: center;
+        width: 90%;
+     }
+
+     .project-buttons {
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-flow: row nowrap;
+        width: 90%;
      }
 
      .project-fund {
@@ -163,24 +186,47 @@
         background-color: #3cb4ab;
         border: none;
         border-radius: 5em;
-        padding: 1em 3em;
-        text-align: center;
+        padding: 1.25em 2.5em;
+        text-align: center;  
      }
 
      .bookmark {
-        color: #7f7f7f;
-        font-weight: 700;
-        background-color: #2f2f2f 
+        background-color: #2f2f2f;
         border: none;
         border-radius: 5em;
-        padding: 1em;
-        margin: 2em;
+        padding: 0;
      }
 
+     /***** Statistics *****/
+
+     .statistics {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-flow: column wrap;
+     }
+
+     .stat-info {
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+     }
+
+     .stat-info p {
+        width: 30%;
+        text-align: center;
+     }
+
+     /***** About *****/
+
+
+     /***** Tablet Display Size *****/
+
+     /***** Desktop Display Size *****/
 
   /* ========================================================================== */
      Helper classes
-     ========================================================================== */
+     /* ========================================================================== */
   
   /*
    * Hide visually and from screen readers
