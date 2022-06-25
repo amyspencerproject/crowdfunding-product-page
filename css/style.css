@@ -92,6 +92,9 @@
      body {
         background: #eaeaf1;
         font-family: 'Source Sans Pro', sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
      }
 
      header {
@@ -104,7 +107,7 @@
      main {
         display: flex;
         justify-content: center;
-        flex-flow: row wrap;
+        flex-flow: row wrap;    
      }
      p {
         color: #7f7f7f;
@@ -136,8 +139,11 @@
      }
 
    .content-wrapper {
-        /* background: #ffffff; */
+        background: #ffffff;
         width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
      }
 
     /***** Header *****/
@@ -173,12 +179,8 @@
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
-        margin-top: -4.5em;
+        margin-top: -7em;
      }
-
-     /* .mastercraft-logo { */
-        /* margin-bottom: -1.5em; */
-     /* } */
 
      /* .pseudo-wrapper::before {
         content: "";
@@ -190,9 +192,9 @@
     } */
 
     .pseudo-wrapper::before {
-        content: url(/images/logo-mastercraft.svg);
+        content: url(../images/logo-mastercraft.svg);
         position: relative;
-        top: 0px;
+        top: 1.5em;
         right: 0px;
         bottom: 0px;
         left: 0px;
