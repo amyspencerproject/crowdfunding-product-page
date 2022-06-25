@@ -169,6 +169,35 @@
         border-radius: 0.25em;
      }
 
+     .pseudo-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin-top: -4.5em;
+     }
+
+     /* .mastercraft-logo { */
+        /* margin-bottom: -1.5em; */
+     /* } */
+
+     /* .pseudo-wrapper::before {
+        content: "";
+        position: relative;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    } */
+
+    .mastercraft-logo::before {
+        content: "";
+        position: relative;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }    
+
      .project-details p {
         text-align: center;
         width: 90%;
@@ -262,12 +291,25 @@
      }
 
      .item {
-        /* display: flex; */
+        /* display: flex;
         justify-content: left;
         align-items: center;
-        flex-flow: row wrap;
-        width: 100%;
-        border: 3px #7f7f7f;
+        flex-flow: row wrap; */
+        width: 90%;
+        border: 0.5px solid #7f7f7f;
+        border-radius: 1em;
+        padding: 1.25em 0.75em;
+        margin: 1em;
+     }
+
+     .inventory {
+        font-size: 2em;
+        font-weight: 700;
+     }
+
+     .select-reward {
+        border-radius: 5em;
+        padding: 1em 1.5em;
      }
 
     
