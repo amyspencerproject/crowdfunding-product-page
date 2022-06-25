@@ -189,8 +189,8 @@
         left: 0px;
     } */
 
-    .mastercraft-logo::before {
-        content: "";
+    .pseudo-wrapper::before {
+        content: url(/images/logo-mastercraft.svg);
         position: relative;
         top: 0px;
         right: 0px;
