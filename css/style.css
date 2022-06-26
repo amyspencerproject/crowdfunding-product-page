@@ -94,14 +94,14 @@
         font-family: 'Source Sans Pro', sans-serif;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-flow: row wrap;
      }
 
      header {
         background: url(../images/image-hero-mobile.jpg) no-repeat center #cecece;
         min-height: 30em;
-        /* width: 100%; */
-        /* background: #eaeaf1; */
+        width: 100%;
      }
      
      main {
@@ -179,7 +179,7 @@
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
-        margin-top: -7em;
+        margin-top: -9em;
      }
 
      /* .pseudo-wrapper::before {
