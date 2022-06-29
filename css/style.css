@@ -99,7 +99,7 @@
      }
 
      header {
-        background: url(../images/image-hero-mobile.jpg) no-repeat center #cecece;
+        background: url(../images/image-hero-mobile.jpg) no-repeat  center center #cecece;
         background-size: cover;
         min-height: 42em;
         /* height: 100%; */
@@ -146,6 +146,7 @@
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
+        padding-top: 2em;
      }
 
     /***** Header *****/
@@ -173,7 +174,7 @@
         flex-flow: row wrap;
         background: #ffffff;
         width: 90%;
-        padding: 1em 0;
+        padding: 2em 0;
         margin-bottom: 1.5em;
         border-radius: 0.25em;
      }
@@ -195,12 +196,17 @@
         left: 0px;
     }    
 
-     .project-details p {
+    .project-details p {
         text-align: center;
         width: 90%;
      }
 
-     .project-buttons {
+    .stat-line {
+        border-bottom: 0.075em solid #7f7f7f;
+        width: 50%;
+      }
+
+    .project-buttons {
         display: flex;
         align-items: center;
         justify-content:space-around;
@@ -315,17 +321,20 @@
      @media only screen and (min-width: 768px) {
 
   
-        h1 {
-          
-        }
-  
       }
 
      /***** Desktop display larger than 1200 px wide*****/
 
      @media only screen and (min-width: 1200px) {
 
-       .header-nav-stack {
+       .content-wrapper {
+        width: 50%;
+       }
+
+       .project-details {
+        width: 50%;
+       }
+        .header-nav-stack {
         display: none;
        }
        
@@ -337,15 +346,28 @@
         flex-flow: row nowrap
         } 
 
-        .header-nav-list ul {
-            
-        }
-
         .header-nav-list li {
             list-style: none;
             padding: 1em 1em;
             margin-right: 2em;
         }
+
+        .stat-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-flow: row nowrap;
+            /* margin-top: 2em; */
+        }
+
+      .stat-info span {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+      .stat-line {
+        border-right: 1em solid #7f7f7f;
+        width: 50%;
       }
 
   /* ========================================================================== */
