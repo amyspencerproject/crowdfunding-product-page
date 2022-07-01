@@ -99,6 +99,8 @@
      }
 
      header {
+        
+        /* background: contain no-repeat url(../images/image-hero-mobile.jpg) #cecece; */
         background: url(../images/image-hero-mobile.jpg) no-repeat  center center #cecece;
         background-size: cover;
         min-height: 42em;
@@ -326,6 +328,14 @@
      /***** Desktop display larger than 1200 px wide*****/
 
      @media only screen and (min-width: 1200px) {
+
+        header {
+            background: contain no-repeat url(../images/image-hero-desktop.jpg) #cecece;
+            /* background-size: cover; */
+            /* min-height: 42em; */
+            height: 100%;
+            width: 100%;
+         }
 
        .content-wrapper {
         width: 50%;
