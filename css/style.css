@@ -158,10 +158,6 @@
         flex-flow: row wrap;
      }
 
-     .header-nav-stack {
-        display: block;
-       }
-
      .header-nav-list {
         display: none;
      }
@@ -370,29 +366,30 @@
             width: 100%;
         }
         
-        .bookmark {
+        .bookmark  {
             display: none;
         }
 
-        /* .bookmark-full {
-            display: contents;
-            text-align: center;
-            padding-right: 10em ;
-            background: #eaeaf1;
-            border-radius: 5em;
-            border: none;
-            color: #7f7f7f;
-        } */
-
-       #bookmark-full {
-            background: #eaeaf1 url('../images/icon-bookmark.svg') no-repeat left;
+       .bookmark-full {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+            background-color: #eaeaf1;
             padding-right: 7em;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
             height: 3.5em;
             border-radius: 5em;
             border: none;
             color: #7f7f7f;
-            text-align: right;
+            text-align: center;
             font-weight: 700;
+        }
+
+        .bookmark-full img {
+            margin-right: 1em;
         }
 
         .stat-info {
@@ -400,7 +397,6 @@
             align-items: center;
             justify-content: space-evenly;
             flex-flow: row nowrap;
-            /* margin-top: 2em; */
         }
 
         .stat-info span {
