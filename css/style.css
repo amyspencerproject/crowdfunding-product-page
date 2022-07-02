@@ -99,12 +99,11 @@
      }
 
      header {
-        
-        /* background: contain no-repeat url(../images/image-hero-mobile.jpg) #cecece; */
-        background: url(../images/image-hero-mobile.jpg) no-repeat  center center #cecece;
+        background: url(../images/image-hero-mobile.jpg) no-repeat center center #cecece;
         background-size: cover;
-        min-height: 42em;
+        min-height: 35em;
         /* height: 100%; */
+        /* min-width: 25em; */
         width: 100%;
      }
      
@@ -233,6 +232,10 @@
         padding: 0;
      }
 
+     .bookmark-full {
+        display: none;
+    }
+
      /***** Statistics *****/
 
      .statistics {
@@ -330,22 +333,19 @@
      @media only screen and (min-width: 1200px) {
 
         header {
-            background: contain no-repeat url(../images/image-hero-desktop.jpg) #cecece;
-            /* background-size: cover; */
-            /* min-height: 42em; */
-            height: 100%;
+            background: url(../images/image-hero-desktop.jpg) no-repeat center center #cecece;
+            background-size: cover;
+            min-height: 23em;
+            /* height: 100%; */
             width: 100%;
          }
 
        .content-wrapper {
-        width: 50%;
+            width: 50%;
        }
 
-       .project-details {
-        width: 50%;
-       }
         .header-nav-stack {
-        display: none;
+            display: none;
        }
        
        .header-nav-list {
@@ -362,6 +362,29 @@
             margin-right: 2em;
         }
 
+        .pseudo-wrapper {
+            width: 50%;
+        }
+
+        .project-details {
+            width: 100%;
+        }
+        
+        .bookmark {
+            display: none;
+        }
+
+        .bookmark-full {
+            display: contents;
+            text-align: center;
+            padding-right: 10em ;
+            background: #eaeaf1;
+            /* background-color: #cecece; */
+            border-radius: 5em;
+            border: none;
+            color: #7f7f7f;
+        }
+
         .stat-info {
             display: flex;
             align-items: center;
@@ -370,15 +393,15 @@
             /* margin-top: 2em; */
         }
 
-      .stat-info span {
-        padding-left: 1em;
-        padding-right: 1em;
-      }
+        .stat-info span {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
 
-      .stat-line {
-        border-right: 1em solid #7f7f7f;
-        width: 50%;
-      }
+        .stat-line {
+            border-right: 1em solid #7f7f7f;
+            /* width: 50%; */
+        }
 
   /* ========================================================================== */
      Helper classes
