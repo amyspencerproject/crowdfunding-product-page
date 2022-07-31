@@ -11,14 +11,11 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;500;700&family=Source+Sans+Pro:wght@300;700&display=swap" rel="stylesheet">  
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
@@ -28,8 +25,8 @@
           <img src="images/logo.svg" alt="crowdfund logo"/>
         </a>
       </figure>
-      <nav>
-        <figure class="header-nav-stack"><a href="">
+      <nav id="header-nav">
+        <figure class="header-nav-hamburger"><a href="">
           <img src="images/icon-hamburger.svg" alt="navigation icon"/>
         </a></figure>
         <ul class="header-nav-list">
@@ -108,19 +105,21 @@
       </section>
     </div>
     
-      <!-- Success modal end -->
+    <script src="js/main.js"></script>  
+    </main>
+
+    <!-- Success modal end -->
       <script src="js/vendor/modernizr-3.11.2.min.js"></script>
       <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
+      <!-- <script src="js/main.js"></script> -->
 
-      <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-      <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-      </script>
-      <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 
-    </main>
   </body>
 
 </html>
