@@ -1,28 +1,20 @@
 const headerNav = document.querySelector("#header-nav");
 const navHamburger = document.querySelector(".header-nav-hamburger");
 const navList = document.querySelector(".header-nav-list");
-const testHover = document.querySelector(".about-description");
+const testHover = document.querySelector(".stat-info");
 
-
-// navHamburger.addEventListener("mouseover", function (e) {
-//     e.target.navHamburger.classList.add(".hide");
-//     //when hovering hide the hamburger
-//     // navHamburger.classList.add(".hide");
-//     //and show the list
-//     // navList.classList.remove("hide");
-//     console.log("The event is working");
+//Test for event handler with mouse
+// testHover.addEventListener("mouseover", (e) => {
+//     e.target.style.color="orange";
 // });
 
-testHover.addEventListener("mouseenter", (e) => {
-    e.target.style.color("orange");
-});
-    
-// Adding HTML code using Javascript is actually a simple “get target container and insert HTML” process:
+navHamburger.addEventListener("mouseover", (e) => {
+    navHamburger.style.display="none";
+    navList.style.display="contents";
+    console.log("The event is working");
+    setTimeout(() => {
+        navHamburger.style.display="contents";
+        navList.style.display="none";
+    }, 1000);
+}, false);
 
-// By directly changing or appending to the inner HTML.
-// var target = document.getElementById("ID");
-// target.innerHTML += "<p>CONTENTS</p>";
-// By creating and inserting a new element.
-// var newElement = document.createElement("p");
-// newElement.innerHTML = "CONTENTS";
-// document.getElementById("ID").appendChild(newElement);
