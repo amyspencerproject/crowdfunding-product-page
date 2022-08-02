@@ -54,6 +54,13 @@ Users should be able to:
 
 ### What I learned
 
+* Always put a type on your ```<button>``` elements. 
+* Make sure your alt descritions for images/icons used for an action say what the action does e.g. alt="bookmark" not alt="bookmark icon"
+* Do not use ```<br/>``` because screen readers say break out loud and that is annoying
+* do not use an empty div with a border to make decorative line. User borders on existing elements
+* Use aria-expanded for menu toggle functions. Like a hamburger icon that toggles to a navigation menu 
+* 
+
 
 ### Continued development
 

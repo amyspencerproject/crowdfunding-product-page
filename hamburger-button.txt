@@ -1,0 +1,56 @@
+<!--Always use button for hamburger menu -->
+  <button class="header__hamburger" aria-expanded="false">Menu</button>
+  
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a href="#">The brand</a>
+      </li>
+      <li>
+        <a href="#">How we do it</a>
+      </li>
+      <li>
+        <a href="#">The packages</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+.header__hamburger[aria-expanded="true"] + .navbar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar {
+  background-color: rgba(250, 250, 250, 1);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  transition: visibility .5s ease,
+              opacity .5s ease;
+  visibility: hidden;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+const button = document.querySelector("button");
+
+
+const handleHamburgerToggle = () =>{
+  const ariaExpanded = button.getAttribute("aria-expanded");
+  
+ if ( ariaExpanded=="false") {
+    button.setAttribute("aria-expanded", "true");
+  } else {
+    button.setAttribute("aria-expanded", "false");
+  }
+  
+  /* button.setAttribute("aria-expanded", ariaExpanded=="false"? "true": false); */
+}
+
+
+button.addEventListener("click", handleHamburgerToggle);

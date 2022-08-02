@@ -26,10 +26,11 @@
         </a>
       </div>
       <nav id="header-nav">
-        <button class="header-nav-hamburger" aria-expanded="false"><a href="">
-          <img src="images/icon-hamburger.svg" alt="navigation"/>
-        </a></button>
-        <ul class="header-nav-list">
+        <button class="nav__hamburger" aria-expanded="false" type="menu">
+          <img src="images/icon-hamburger.svg" alt="navigation toggle"/>
+        </button>
+
+        <ul class="nav-list">
           <li><a href="#about" target=""></a>About</li>
           <li><a href="#discover" target=""></a>Discover</li>
           <li><a href="#get-started" target=""></a>Get Started</li>
@@ -43,9 +44,10 @@
       <h1>Mastercraft Bamboo Monitor Riser</h1>
       <p class="project-text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
       <div class="project-buttons">
-        <button class="project-fund">Back this project</button>
-        <button class="bookmark"><image src="images/icon-bookmark.svg" alt="bookmark icon"/></button>
-        <button class="bookmark-full"><image src="images/icon-bookmark.svg" alt="bookmark icon"/>Bookmark</button>
+        <button class="project-fund" type="button">Back this project</button>
+        <button class="bookmark" type="button"><image src="images/icon-bookmark.svg" alt="bookmark"/></button>
+        <!-- <button class="bookmark-full" type="button"><image src="images/icon-bookmark.svg" alt="bookmark"/>Bookmark</button> -->
+        <!-- use aria-pressed attribute toggle to make this not two seperate buttons -->
       </div>
     </section>
   </div>
@@ -54,13 +56,12 @@
     <div class="content-wrapper">
       <section class="statistics">
         <div class="stat-info">
-          <p><span>$89,914</span></br>of $100,000 backed</p>  
-          <div class="stat-line"></div> 
-          <p><span>5,007</span><br/>total backers</p>
-          <div class="stat-line"></div>
-          <p><span>56</span><br/>days left</p>
+          <p><span>$89,914</span>of $100,000 backed</p>  
+          <p><span>5,007</span>total backers</p>
+          <p><span>56</span>days left</p>
         </div>
         <progress id="fund-progress" aria-label="Progress Bar"></progress>
+        <!-- Look at Grace's comments on how to label this -->
       </section>
       <div class="progress-bar">
         
@@ -80,7 +81,7 @@
           <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
             you&apos;ll be added to a special Backer member list.</p>
             <p><span class="inventory">101</span> left</p>
-            <button class="select-reward">Select Reward</button>
+            <button class="select-reward" type="button">Select Reward</button>
         </div>
 
         <div class="item">
@@ -89,7 +90,7 @@
           <p>You get a Black Special Edition computer stand and a personal thank you. You&apos;ll be added to our Backer 
             member list. Shipping is included.</p>
           <p><span class="inventory">64</span> left</p>
-          <button class="select-reward">Select Reward</button>
+          <button class="select-reward" type="button">Select Reward</button>
         </div>
         
         <div class="item">
@@ -98,7 +99,7 @@
           <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You&apos;ll be added 
             to our Backer member list. Shipping is included.</p>
           <p><span class="inventory">0</span> left</p>
-          <button class="select-reward">Select Reward</button>
+          <button class="select-reward" type="button">Select Reward</button>
           <!-- <button class="out-stock">Out of Stock</button> -->
         </div>
       </section>

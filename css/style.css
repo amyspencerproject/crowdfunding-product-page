@@ -156,14 +156,23 @@
      .header-logo {
       margin: 1em 1.5em;
      }
-
-     .header-nav-hamburger {
+     .nav__hamburger {
       background-color: transparent;
      }
 
-     .header-nav-list {
-        display: none;
-        color: #ffffff;
+     .nav__hamburger[aria-expanded="true" + .nav-list] {
+      background-color: transparent;
+      display: contents;
+     }
+
+     .nav-list {
+      background-color: #ffffff;
+      display: none;
+      color: fuchsia;
+      position: absolute;
+      top: 1em;
+      /* transition: ; */
+
      }
 
      .hide {

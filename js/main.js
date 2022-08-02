@@ -1,26 +1,23 @@
 const headerNav = document.querySelector("#header-nav");
-const navHamburger = document.querySelector(".header-nav-hamburger");
-const navList = document.querySelector(".header-nav-list");
-const testHover = document.querySelector(".stat-info");
+const navHamburger = document.querySelector(".nav__hamburger");
+const navList = document.querySelector(".nav-list");
+// const ariaExpanded = navHamburger.getAttribute("aria-expanded");
 
-//Test for event handler with mouse
-// testHover.addEventListener("mouseover", (e) => {
-//     e.target.style.color="orange";
-// });
+//first make a function to handle the toggle of the aria-expanded boolean
+const handleHamburgerToggle = () => {
+    const ariaExpanded = navHamburger.getAttribute("aria-expanded");
 
-// navHamburger.addEventListener("click", () => {
-//     navHamburger.style.display="none";
-//     navList.style.display="contents";
-//     console.log("The event is working");
-// });
-
-navHamburger.addEventListener("click", () => {
-    if(navHamburger.hasAttribute("aria-expanded = false")) {
-        navHamburger.style.display="none";
-        navList.style.display="contents";
-        console.log("The event is working");  
+    if (ariaExpanded == "false") {
+        //make nav list visible and set aria to true
+        navHamburger.setAttribute("aria-expanded", "true");
+        console.log("The function is working!!")
     } else {
-        console.log("Blah!");
+        navHamburger.setAttribute("aria-expanded", "false");
+        console.log("The other part of function is working!!")
     }
-    
-});
+    console.log(ariaExpanded);
+}
+
+//then pass the toggle function thru the event listener
+navHamburger.addEventListener("click", handleHamburgerToggle);
+
