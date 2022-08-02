@@ -153,6 +153,13 @@
         justify-content: space-between;
         flex-flow: row wrap;
      }
+     .header-logo {
+      margin: 1em 1.5em;
+     }
+
+     .header-nav-hamburger {
+      background-color: transparent;
+     }
 
      .header-nav-list {
         display: none;
@@ -355,7 +362,7 @@
             width: 50%;
        }
 
-        .header-nav-stack {
+      .header-nav-hamburger {
             display: none;
        }
        

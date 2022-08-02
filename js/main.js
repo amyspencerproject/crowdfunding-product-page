@@ -8,13 +8,19 @@ const testHover = document.querySelector(".stat-info");
 //     e.target.style.color="orange";
 // });
 
-navHamburger.addEventListener("mouseover", (e) => {
-    navHamburger.style.display="none";
-    navList.style.display="contents";
-    console.log("The event is working");
-    setTimeout(() => {
-        navHamburger.style.display="contents";
-        navList.style.display="none";
-    }, 1000);
-}, false);
+// navHamburger.addEventListener("click", () => {
+//     navHamburger.style.display="none";
+//     navList.style.display="contents";
+//     console.log("The event is working");
+// });
 
+navHamburger.addEventListener("click", () => {
+    if(navHamburger.hasAttribute("aria-expanded = false")) {
+        navHamburger.style.display="none";
+        navList.style.display="contents";
+        console.log("The event is working");  
+    } else {
+        console.log("Blah!");
+    }
+    
+});
