@@ -165,6 +165,10 @@
       display: contents;
      }
 
+     .nav__x {
+      background-color: transparent;
+     }
+
      .nav-list {
       background-color: #ffffff;
       display: none;
