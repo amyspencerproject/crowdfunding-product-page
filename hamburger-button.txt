@@ -54,3 +54,10 @@ const handleHamburgerToggle = () =>{
 
 
 button.addEventListener("click", handleHamburgerToggle);
+
+The navigation list that will need to be visible for desktop display size
+ <ul class="nav-list">
+  <li><a href="#about" target=""></a>About</li>
+  <li><a href="#discover" target=""></a>Discover</li>
+  <li><a href="#get-started" target=""></a>Get Started</li>
+</ul>
