@@ -15,7 +15,10 @@ const handleHamburgerToggle = () => {
         console.log("The function is working!!")
         navHamburger.classList.add("hide");
         // navModal.classList.remove("hide");
-        navModal.style.display = "block";
+        navModal.style.display = "flex";
+        // navModal.style.justify-content = "center";
+        // navModal.style.flex-wrap = "row wrap";
+
 
     } else {
         navHamburger.setAttribute("aria-expanded", "false");
