@@ -146,6 +146,12 @@
         padding-top: 2em;
      }
 
+     .hide {
+      display: none;
+     }
+
+
+
     /***** Header *****/
      .header-wrapper {
         /* width: 80%; */
@@ -165,10 +171,6 @@
       display: contents;
      }
 
-     .hide {
-      display: none;
-     }
-
      /***** Nav Modal *****/
 
    /* The Modal (background) */
@@ -178,14 +180,17 @@
          justify-content: right;
          align-items: top;
          flex-flow: row wrap;
-         position: fixed; /* Stay in place */
+         position: fixed; /*Stay in place */
          z-index: 1; /* Sit on top layer */
-         padding-top: 0; /* Location of the box */
+         padding-top: 1em; /* Location of the box */
          left: 0; /* absolute offset of margin to container */
          top: 0;
          width: 100%; /* Full width */
-         background-color: rgb(0,0,0); /* Fallback color */
-         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+         /* background-color: rgb(0,0,0); Fallback color */
+         /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+         /* background-image: linear-gradient(#000000, transparent); */
+         background-image: linear-gradient(rgba(0,0,0,0.4), transparent);
+         padding-bottom: 50em;
       }
 
       /* Nvaitgation Close Button */
@@ -198,7 +203,7 @@
       .modal-content {
          background-color: #fefefe;
          border-radius: 15px;
-         margin: 0 5em 5em;
+         margin: 5em 5em;
          padding: 0;
          width: 100%;
          display: flex;
@@ -207,20 +212,25 @@
 
       .nav-list {
          background-color: #ffffff;
+         border-radius: 15px;
          display: flex;
          flex-flow: column wrap;
          color: #000000;
          list-style-type: none;
          width: 100%;
          padding: 0;
-        }
+         margin: 0;
+      }
    
-        .nav-list li {
+      .nav-list li {
          padding: 1em;
          font-size: 1.5em;
          border-bottom: .05em solid #c7c7c7;
-        }
- 
+      }
+      .no-border  {
+         border: none !important;
+      }
+
      /***** Project Details *****/
      .project-details {
         display: flex;

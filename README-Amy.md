@@ -50,6 +50,7 @@ Users should be able to:
 - do not use an empty div with a border to make decorative line. User borders on existing elements
 - Use aria-expanded for menu toggle functions. Like a hamburger icon that toggles to a navigation menu
 - the close button must be part of the modal otherwise you can not access it to close the modal
+- still had to use an !important, on the expanded navigation bar bottom li element
 
 ### Continued development
 
